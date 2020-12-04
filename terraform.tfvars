@@ -2,6 +2,9 @@
 # These VPCs, subnets, and gateways will be created as part of the demo
 #path_to_your_aws_credentials_file = "yourPath/.aws/credentials"
 public_key_path            = "~/.aws/MYPUBKEY.pem"
+aws_account_id             = "000000000000"
+aws_access_key             = "AAAAAAAAAAAAAAAAAAAA"
+aws_secret_key             = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 aws_region                 = "us-east-1"
 ssh_key_name               = "MYPUBKEY"
 aws_vpc_cidr               = "10.0.0.0/16"
@@ -28,3 +31,10 @@ my_user_data = <<-EOF
 EOF
 
 cg_size                        = "c5.large"
+
+Open the IAM console at https://console.aws.amazon.com/iam/ .
+On the navigation menu, choose Users.
+Choose your IAM user name (not the check box).
+Open the Security credentials tab, and then choose Create access key.
+To see the new access key, choose Show. ...
+To download the key pair, choose Download .
